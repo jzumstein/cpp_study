@@ -1,2 +1,4 @@
 ﻿  learncpp_Chapter1_Q3.cpp
-  learncpp_Chapter1_Q3.vcxproj -> J:\dev\cpp\learn_cpp\ch_01_Q3\learncpp_Chapter1_Q3\x64\Debug\learncpp_Chapter1_Q3.exe
+learncpp_Chapter2_4.obj : error LNK2005: "int __cdecl doubleNumber(int)" (?doubleNumber@@YAHH@Z) already defined in learncpp_Chapter1_Q3.obj
+learncpp_Chapter2_4.obj : error LNK2005: main already defined in learncpp_Chapter1_Q3.obj
+J:\dev\cpp\learn_cpp\ch_01_Q3\learncpp_Chapter1_Q3\x64\Debug\learncpp_Chapter1_Q3.exe : fatal error LNK1169: one or more multiply defined symbols found
