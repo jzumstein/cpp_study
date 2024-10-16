@@ -1,14 +1,18 @@
 #include <iostream>
+#include <chrono>
 
 int doubleNumber(int x)
 {
+	//return x * 2;
 	return x + x;
 }
 
 int main()
 {
-	int num{};
-	std::cout << "Enter a number: ";
-	std::cin >> num;
-	std::cout << doubleNumber(num);
+	int num{5};
+	auto start = std::chrono::high_resolution_clock::now();
+	std::cout << "Number = " << num << "\nDouble Number = " << doubleNumber(num);
+	auto end = std::chrono::high_resolution_clock::now();
+	std::chrono::duration<double, std::micro> duration = end - start;
+	std::cout << "\nExecution time: " << duration.count() << " microseconds" << "\n";
 }
