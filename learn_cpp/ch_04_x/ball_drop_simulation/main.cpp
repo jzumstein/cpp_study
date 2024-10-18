@@ -1,7 +1,11 @@
 #include <iostream>
 
-float distance_fallen(float t_height, float seconds, float gravity = {9.8})
+// #define gravity = 9.8
+// Preferred method is const variables over macros.
+
+float distance_fallen(float t_height, float seconds)
 {
+	const float gravity = 9.8;
 	float height  = (t_height - (gravity * (seconds * seconds) / 2));
 	if (height <= 0)
 	{
