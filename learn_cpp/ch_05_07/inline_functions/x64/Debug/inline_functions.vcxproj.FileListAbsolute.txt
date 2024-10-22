@@ -1,0 +1,1 @@
+J:\dev\cpp\learn_cpp\ch_05_07\inline_functions\x64\Debug\inline_functions.exe
